@@ -1,1 +1,1 @@
-echo "# dog-page"
+echo "# dog"
