@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: #333;
+  overflow: hidden;
+}
+
+.landing {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.landing-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-top: 0.6rem;
+}
+
+.landing-inner img {
+  max-width: 60%;
+  max-height: 30vh;
+  opacity: 0.7;
+}
+
+.landing h1 {
+  font-size: 3.1rem;
+  padding: 1.5rem;
+}
+
+.landing p {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.countdown {
+  font-size: 3.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.countdown div {
+  padding: 1.2rem;
+  border: 1px solid #fff;
+  border-radius: 0.6rem;
+  margin: 0.5rem;
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.countdown div:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.countdown div:first-child {
+  background-color: #17a2b8;
+}
+
+.countdown div:first-child:hover {
+  background-color: rgba(23, 163, 184, 0.4);
+}
+
+.countdown span {
+  display: block;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 566px) {
+  .landing-inner img {
+    max-height: 20vh;
+  }
+  .landing h1 {
+    font-size: 2.5rem;
+    word-wrap: break-word;
+  }
+  .countdown {
+    font-size: 1.8rem;
+    flex-direction: column;
+  }
+  .countdown div {
+    display: none;
+  }
+  .countdown div:first-child {
+    display: block;
+    width: 60%;
+  }
+  .countdown div:nth-child(2) {
+    display: block;
+    width: 60%;
+  }
+}
+
+@media (max-height: 600px) {
+  img {
+    max-width: 20%;
+  }
+  p {
+    display: none;
+  }
+}
+
+@media (max-height: 375px) {
+  img {
+    padding-bottom: 0.5rem;
+  }
+  h1 {
+    display: none;
+  }
+  .countdown div {
+    padding: 0.2rem;
+  }
+}
